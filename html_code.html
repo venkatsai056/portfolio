@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="venkatasai | Data engineer, Cloud, and Data Analyst Portfolio" />
+  <meta name="keywords" content="venkatasai, Data engineer, Cloud Engineer, Data ANALYST, Portfolio" />
+  <title>Venkata Sai | Portfolio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav>
+    <div id="name">Venkatasai Pasupuleti</div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+  <i class="fas fa-bars"></i>
+</div>
+    <ul>
+      <li><a href="#header">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contactus">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <section class="firstsection" id="header">
+    <img src="my_pic.jpeg" alt="Profile Picture">
+    <div class="description">
+      Hi, My Name is <span>Venkatasai</span><br>
+      and I am a passionate <br><span id="element"></span>
+      <br>
+      <button class="btn" onclick="location.href='Venkatasai_Resume.pdf'">Download CV</button>
+    </div>
+  </section>
+
+  <section class="secondsection" id="about">
+    <h1 class="sub-title">About Me</h1>
+    <p>I am seeking a challenging and dynamic work environment where I can effectively apply my skills and knowledge to advance my career and contribute to the growth and success of the organization.</p>
+
+    <div>
+      <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+      <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+      <p class="tab-links" onclick="opentab('Certifications', event)">Certifications</p>
+      <p class="tab-links" onclick="opentab('education', event)">Education</p>
+    </div>
+
+    <div class="tab-contents active-tab" id="skills">
+      <ul>
+        <li><b>Scripting:</b> Python, PowerShell, Snowsql,BQSQL, SQL</li>
+        <li><b>Databases:</b> MySQL, AzureSQL, Oracle,Mysql server,CloudSQL</li>
+        <li><b>Cloud &Languages:</b> GCP, AWS, Azure,Terraform, </li>
+      </ul>
+    </div>
+    <div class="tab-contents" id="experience">
+      <ul>
+        <li><b>Projects:</b>Teradata to gcp migration,car manufaturing raw material utlization</li>
+        <li><b>Currently Working on:</b> Factory wise at NIMBUS INSIGHTS</li>
+      </ul>
+    </div>
+    <div class="tab-contents" id="Certifications">
+      <ul>
+        <li><b>Snowflake:</b> snowpro-core</li>
+      </ul>
+    </div>
+    <div class="tab-contents" id="education">
+      <ul>
+        <li><b>BACHELOR OF TECHNOLOGY:</b>Ramireddy subbaramireddy engineering college(2017-2021)</li>
+        <li><b>Intermediate:</b> Sri Vivekananda junior college -vinjamur(2015-2017)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="thirdsection" id="projects">
+    <h1 class="sub-title">Projects</h1>
+    <div class="project-list">
+      <div class="project">
+        <h3 class="project-title">Teradata -GCP Migration</h3>
+        <img src="pic1.png" alt="TERADATA -GCP MIGRATION">
+        <div class="btn-container">
+          <!-- <button class="btn" onclick="location.href='https://github.com/kanasanisaikrishna/login-and-registration.git'">GitHub</button> -->
+           <P>Extracted data from Teradata, including tables, views, and stored procedures, using Teradata SQL. Converted the extracted logic into BigQuery SQL (BQSQL) and loaded the transformed data into BigQuery tables. The data was also staged in Google Cloud Storage for further processing and backup </P>
+        </div>
+      </div>
+      <div class="project">
+        <h3 class="project-title">CAR-MANUFACTURING RAW MATERIAL UTLIZATION</h3>
+        <img src="pic2.jpg" alt="Todo App">
+        <div class="btn-container">
+          <!-- <button class="btn" onclick="location.href='https://github.com/kanasanisaikrishna/ToDo_app.git'">GitHub</button> -->
+           <p>Developed a factory-level project to monitor and optimize raw material usage in car manufacturing. The system tracks real-time material consumption, identifies usage patterns, and minimizes waste across production lines—enhancing efficiency, traceability, and cost-effectiveness in the manufacturing process.</p>
+        </div>
+  </section>
+
+  <section class="fourthsection" id="contactus">
+    <div class="contact-left">
+      <h1 class="sub-title">Contact Me</h1>
+      <p><i class="fa-solid fa-paper-plane"></i>paspuletivenkatasai@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i> 7995781862</p>
+      <div class="social-media">
+        <a href="linkedin.com/in/pasupuleti-venkatasai-3b1346196/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/sai.pasupuleti.79/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/v.sai_royal/"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="contact-right">
+      <form name="submit-to-google-sheet">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+        <button class="btn" type="submit">Submit</button>
+        <span id="msg"></span>
+      </form>
+    </div>
+  </section>
+
+  <div class="copyright">
+    <p>&copy; 2025 Venkatasai Pasupuleti. All Rights Reserved.</p>
+  </div>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["DATA ENGINEER", "Cloud Engineer","DATA ANALYST","ETL DEVELOPER"],
+      typeSpeed: 50,
+      loop: true
+    });
+  </script>
+  <script>
+    function opentab(tabname, event) {
+      const tablinks = document.getElementsByClassName("tab-links");
+      const tabcontents = document.getElementsByClassName("tab-contents");
+      for (let i = 0; i < tablinks.length; i++) tablinks[i].classList.remove("active-link");
+      for (let i = 0; i < tabcontents.length; i++) tabcontents[i].classList.remove("active-tab");
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    const form = document.forms["submit-to-google-sheet"];
+    const msg = document.getElementById("msg");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch("https://script.google.com/macros/s/AKfycbwrYzzLkXNV8EL0CX6xLtNag3UTb2ztmqlUr-LwoSkTTZ8ErYfpyJcpmLxJK1BuHE7K/exec", {
+        method: "POST",
+        body: new FormData(form),
+      })
+        .then((response) => {
+          msg.innerHTML = "Message sent successfully!";
+          setTimeout(() => (msg.innerHTML = ""), 5000);
+          form.reset();
+        })
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
+  <script>
+  function toggleMenu() {
+    document.querySelector("nav ul").classList.toggle("active");
+  }
+</script>
+</body>
+
+</html>
